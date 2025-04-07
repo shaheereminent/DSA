@@ -8,11 +8,11 @@ var twoSum = function (nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
     let current = nums[i] // 0,1,2...
-    let needed = target - current // 9 - current
+    let complement = target - current // 9 - current
 
-    if (obj.hasOwnProperty(needed)) {
-      console.log([obj[needed], i])
-      return [obj[needed], i]
+    if (obj.hasOwnProperty(complement)) {
+      console.log([obj[complement], i])
+      return [obj[complement], i]
     } // remaining of target and current iteration ie 9 - 2
 
     obj[current] = i
